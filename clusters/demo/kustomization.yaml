@@ -6,5 +6,6 @@ namespace: openshift-gitops
 resources:
   - cluster-config.yaml
   - cluster-config-project.yaml
+  - argocd.yaml
 
   
