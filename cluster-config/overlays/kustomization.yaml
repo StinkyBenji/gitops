@@ -6,6 +6,10 @@ namespace: openshift-gitops
 bases:
   - ../base
 
-resources:
-  - cluster-rolebinding.yaml
-  - cluster-config.yaml
+patchesJson6902:
+  - target:
+      kind: ClusterRoleBinding
+      name: cluster-admin-1
+      version: v1
+    path: cluster-rolebinding.yaml
+    

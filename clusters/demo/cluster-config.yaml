@@ -11,7 +11,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: cluster-config/base
+    path: cluster-config/overlays
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
   syncPolicy:
