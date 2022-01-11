@@ -5,6 +5,3 @@ namespace: openshift-gitops
 
 resources:
   - cluster-config-project.yaml
-  - cluster-config.yaml
-  - cluster-rolebinding.yaml
-  
