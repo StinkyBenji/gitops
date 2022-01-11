@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: cluster-config
+  namespace: argocd
+spec:
+  sourceRepos: https://github.com/StinkyBenji/openshift-gitops-practice
+  destinations:
+  - namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+
