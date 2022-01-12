@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-config
+  namespace: argocd-01-instance
+spec:
+  destination:
+    namespace: argocd-01-instance
+    server: https://kubernetes.default.svc
+  project: argocd-config
+  source:
+    path: argocd/overlays
+    repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
+    targetRevision: master
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true

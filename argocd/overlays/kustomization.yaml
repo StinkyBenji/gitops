@@ -3,3 +3,12 @@ kind: Kustomization
 
 bases:
   - ../base
+
+
+patchesJson6902:
+  - target:
+      kind: Group
+      name: cluster-admin-argocd
+      version: v1
+      group: user.openshift.io
+    path: argocd-group.yaml
