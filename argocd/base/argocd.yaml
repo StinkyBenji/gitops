@@ -8,7 +8,9 @@ spec:
   dex:
     openShiftOAuth: true
   rbac:    
-    policy: 'g, system:cluster-admins, role:admin'
+    policy: |
+      'g, system:cluster-admins, role:admin'
+      'g, system:authenticated:oauth, role:admin'
     scopes: '[groups]'      
   server:
     route:
