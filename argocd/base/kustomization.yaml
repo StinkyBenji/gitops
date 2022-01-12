@@ -5,4 +5,5 @@ resources:
   - argocd.yaml
   - argocd-ns.yaml
   - argocd-group.yaml
+  - argocd-clusterrb.yaml
   
