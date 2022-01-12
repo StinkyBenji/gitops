@@ -4,3 +4,10 @@ kind: Kustomization
 bases:
   - ../base
 
+patchesJson6902:
+  - target:
+      kind: ArgoCD
+      name: argocd-01
+      version: v1alpha1
+      group: argoproj.io
+    path: argocd.yaml
