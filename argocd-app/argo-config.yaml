@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: argocd-config
   source:
-    path: argocd/overlays
+    path: argocd/base
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
   syncPolicy:

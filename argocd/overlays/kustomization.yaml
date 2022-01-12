@@ -9,6 +9,6 @@ patchesJson6902:
   - target:
       kind: Group
       name: argocdadmins
-      version: v1
       group: user.openshift.io
+      version: v1
     path: argocd-group.yaml
