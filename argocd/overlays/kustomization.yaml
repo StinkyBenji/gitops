@@ -8,7 +8,7 @@ bases:
 patchesJson6902:
   - target:
       kind: Group
-      name: cluster-admin-argocd
+      name: argocdadmins
       version: v1
       group: user.openshift.io
     path: argocd-group.yaml
