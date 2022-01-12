@@ -1,4 +1,0 @@
-- op: add
-  path: /spec/rbac/policy/-
-  value:
-    - 'g, system:authenticated:oauth, role:admin'
