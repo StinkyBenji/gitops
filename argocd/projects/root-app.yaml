@@ -12,3 +12,8 @@ spec:
     path: argocd/apps/keycloak/base
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
+
+syncPolicy:
+  automated:
+    prune: false
+    selfHeal: true
