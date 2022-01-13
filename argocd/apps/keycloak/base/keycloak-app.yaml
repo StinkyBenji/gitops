@@ -12,6 +12,9 @@ spec:
     charts: keycloak
    
   syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
   
