@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: appbundle-parent
   source:
-    path: argocd/apps/keycloak
+    path: argocd/apps/keycloak/base
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
