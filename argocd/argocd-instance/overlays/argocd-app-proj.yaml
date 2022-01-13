@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: argocd-config
-  namespace: argocd-01-instance
+  name: parent-app
+  namespace: argocd-01
 spec:
   sourceRepos:
   - '*'
