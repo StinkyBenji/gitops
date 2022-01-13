@@ -6,6 +6,6 @@ commonLabels:
 
   
 resources:
-  - keycloak.yaml
+  - keycloak-app.yaml
 
   
