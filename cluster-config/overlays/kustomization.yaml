@@ -3,8 +3,8 @@ kind: Kustomization
 
 bases:
   - ../base
-  - ../../argocd/projects/
-  - ../../argocd/argocd-instance/base
+  - ../../argocd/apps/argocd-manager
+  - ../../argocd/projects/root-app-project
 
 
 patchesJson6902:

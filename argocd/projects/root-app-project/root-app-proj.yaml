@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: appbundle-parent
+  name: root-app
   namespace: argocd-01
 spec:
   sourceRepos:
