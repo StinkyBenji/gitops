@@ -8,13 +8,13 @@ spec:
     server: https://kubernetes.default.svc
   project: appbundle-parent
   source:
-    repoURL: https://github.com/codecentric/helm-charts/
+    repoURL: https://codecentric.github.io/helm-charts
     chart: keycloak
     targetRevision: 16.0.5
 
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
+  
+    
+    
   
   
   
