@@ -2,9 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ArgoCD
 metadata:
   name: argocd
-  namespace: argocd-01
-  # labels:
-  #  argocd.argoproj.io/managed-by: openshift-gitops
+  namespace: argocd-01  
 spec:
   applicationInstanceLabelKey: argocd.argoproj.io/instance
   dex:

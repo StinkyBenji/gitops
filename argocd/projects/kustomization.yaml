@@ -1,8 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-commonLabels:
-  argocd.argoproj.io/managed-by: openshift-gitops
 
 bases:
   - ../argocd-instance/base
@@ -11,6 +9,6 @@ bases:
 resources:
   - appbundle-proj.yaml
   - root-app.yaml
-
+  - keycloak-ns.yaml
 
   
