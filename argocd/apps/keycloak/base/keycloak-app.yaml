@@ -9,12 +9,10 @@ spec:
   project: appbundle-parent
   source:
     repoURL: https://github.com/codecentric/helm-charts/
-    charts: keycloak
+    chart: keycloak
     targetRevision: 16.0.5
+
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: true
     syncOptions:
     - CreateNamespace=true
   

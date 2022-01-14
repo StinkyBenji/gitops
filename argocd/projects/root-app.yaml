@@ -4,17 +4,17 @@ metadata:
   name: root-appbundle
 spec:
   destination:
-    namespace: root-appbundle              
+    namespace: argocd-01            
     server: https://kubernetes.default.svc
   project: appbundle-parent
   source:
-    path: argocd/apps/keycloak/base
+    path: cluster-config/overlays
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
 
 syncPolicy:
   automated:
     prune: false
-    selfHeal: 
-  syncOptions:
-  - CreateNamespace: true
+    selfHeal: true
+  
+  

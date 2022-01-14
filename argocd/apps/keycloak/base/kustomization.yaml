@@ -3,7 +3,6 @@ kind: Kustomization
 
 commonLabels:
   argocd.argoproj.io/managed-by: argocd-01
-
   
 resources:
   - keycloak-app.yaml

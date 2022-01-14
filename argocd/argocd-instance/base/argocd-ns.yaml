@@ -3,5 +3,4 @@ kind: Namespace
 metadata:
   name: argocd-01
 spec:
-  finalizers:
-  - kubernetes
+
