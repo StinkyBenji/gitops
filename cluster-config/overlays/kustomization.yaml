@@ -17,4 +17,3 @@ patchesJson6902:
 
 resources:
   - keycloak-ns.yaml
- 
