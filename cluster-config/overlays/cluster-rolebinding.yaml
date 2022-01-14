@@ -4,4 +4,11 @@
     kind: User
     apiGroup: rbac.authorization.k8s.io
     name: ruizhang@redhat.com
-    
+
+
+- op: add
+  path: /subjects/-
+  value: 
+    kind: ServiceAccount
+    namespace: openshift-gitops
+    name: openshift-gitops-argocd-application-controller
