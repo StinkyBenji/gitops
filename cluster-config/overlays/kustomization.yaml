@@ -12,3 +12,6 @@ patchesJson6902:
       version: v1
       group: rbac.authorization.k8s.io
     path: cluster-rolebinding.yaml
+
+resources:
+  - keycloak-ns.yaml

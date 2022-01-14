@@ -1,14 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-
-bases:
-  - ../argocd-instance/base
-
-
 resources:
   - appbundle-proj.yaml
   - root-app.yaml
-  - keycloak-ns.yaml
 
   
