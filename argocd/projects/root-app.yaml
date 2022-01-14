@@ -2,13 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: root-appbundle
+  namespace: argocd-01
 spec:
   destination:
     namespace: argocd-01            
     server: https://kubernetes.default.svc
   project: appbundle-parent
   source:
-    path: cluster-config/overlays
+    path: argocd/apps/keycloak/base
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
 
