@@ -3,6 +3,7 @@ kind: Kustomization
 
 bases:
   - ../base
+  - ../../argocd/argocd-instance/base
 
 patchesJson6902:
   - target:
