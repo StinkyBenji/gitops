@@ -3,5 +3,6 @@ kind: Kustomization
 
 resources:
   - argocd-instance-manager.yaml
+  - argocd-ns.yaml
 
   
