@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: openshift-tools
+spec:
+  containers:
+  - name: openshift-tools
+    image: registry.redhat.io/openshift4/ose-tools-rhel8
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo 'still alive'; sleep 20; done"]
+  restartPolicy: OnFailure
