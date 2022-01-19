@@ -7,7 +7,14 @@ spec:
   - name: openshift-tools
     image: registry.redhat.io/openshift4/ose-tools-rhel8
     command: ["/bin/sh"]
-    args: ["-c", "while true; do echo 'still alive'; sleep 20; done"]
+    args: ["-c", "cat /etc/secretpath/openshift"]
   restartPolicy: OnFailure
-  imagePullSecrets:
-  - name: mysecret
+  volumes:
+  - name: secretpath
+    secret:
+      secretName: mysecret
+      items:
+      - key: openshift
+        path: openshift
+
+  
