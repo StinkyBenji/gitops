@@ -23,8 +23,8 @@ spec:
             readOnly: true
         command: ["/bin/sh"]
         args: ["-c", "while true; do echo 'good'; done"]
-        
-      restartPolicy: OnFailure
+
+      restartPolicy: Always
       volumes:
       - name: secretpath
         secret:
