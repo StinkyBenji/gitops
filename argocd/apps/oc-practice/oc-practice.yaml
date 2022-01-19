@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: oc-practice
-  namespace: oc-practice
 spec:
   destination:
     namespace: oc-practice            
