@@ -17,3 +17,4 @@ patchesJson6902:
 
 resources:
   - keycloak-ns.yaml
+  - oc-practice-ns.yaml
