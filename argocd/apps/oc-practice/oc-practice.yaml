@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-appbundle
-  namespace: argocd-01
+  name: oc-practice
+  namespace: oc-practice
 spec:
   destination:
-    namespace: argocd-01            
+    namespace: oc-practice            
     server: https://kubernetes.default.svc
   project: root-app
   source:
-    path: argocd/apps/oc-practice
+    path: argocd/apps/openshift-tools
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
 

@@ -16,5 +16,4 @@ patchesJson6902:
     path: cluster-rolebinding.yaml
 
 resources:
-  - keycloak-ns.yaml
   - oc-practice-ns.yaml
