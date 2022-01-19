@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: openshift-tools
+  namespace: oc-practice
 spec:
   containers:
   - name: openshift-tools
@@ -9,3 +10,5 @@ spec:
     command: ["/bin/sh"]
     args: ["-c", "while true; do echo 'still alive'; sleep 20; done"]
   restartPolicy: OnFailure
+  imagePullSecrets:
+  - name: mysecret
