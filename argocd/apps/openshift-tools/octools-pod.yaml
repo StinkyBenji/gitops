@@ -6,8 +6,12 @@ spec:
   containers:
   - name: openshift-tools
     image: registry.redhat.io/openshift4/ose-tools-rhel8
+    volumeMounts:
+    - name: secretpath
+      mountPath: "/etc/secretpath"
     command: ["/bin/sh"]
     args: ["-c", "cat /etc/secretpath/openshift"]
+    
   restartPolicy: OnFailure
   volumes:
   - name: secretpath
