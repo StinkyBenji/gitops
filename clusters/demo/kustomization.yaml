@@ -3,7 +3,6 @@ kind: Kustomization
 
 bases:
   - ../../argocd/projects/cluster-config-project
-  - ../../argocd/apps/oc-practice
 
 resources:
   - cluster-config.yaml
