@@ -9,16 +9,17 @@ spec:
     volumeMounts:
     - name: secretpath
       mountPath: "/etc/secretpath"
-    command: ["/bin/sh"]
-    args: ["-c", "cat /etc/secretpath/openshift"]
+      readOnly: true
+    # command: ["/bin/sh"]
+    # args: ["-c", "cat /etc/secretpath"]
     
   restartPolicy: OnFailure
   volumes:
   - name: secretpath
     secret:
       secretName: mysecret
-      items:
-      - key: openshift
-        path: openshift
+      # items:
+      # - key: openshift
+      #   path: openshift
 
   
