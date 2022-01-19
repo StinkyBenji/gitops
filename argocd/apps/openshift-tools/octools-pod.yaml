@@ -17,7 +17,7 @@ spec:
     #   mountPath: "/etc/secretpath"
     #   readOnly: true
     command: ["/bin/sh"]
-    args: ["-c", "echo $SECRET_KEY"]
+    args: ["-c", "while true; do echo $SECRET_KEY; done"]
     
   restartPolicy: OnFailure
   # volumes:
