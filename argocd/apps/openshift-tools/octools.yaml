@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openshift-tools
+  labels:
+    app: openshift-tools
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: openshift-tools
+  template:
+    metadata:
+      labels:
+        app: openshift-tools
+    spec:
+      containers:
+      - name: openshift-tools
+        image: registry.redhat.io/openshift4/ose-tools-rhel8
+        volumeMounts:
+          - name: secretpath
+            mountPath: "/etc/secretpath"
+            readOnly: true
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo 'good'; done"]
+        
+      restartPolicy: OnFailure
+      volumes:
+      - name: secretpath
+        secret:
+          secretName: mysecret
+          items:
+          - key: openshift
+            path: openshift
+  
+  
+  
+  
+  
+  
+
+  
