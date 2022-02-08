@@ -5,9 +5,9 @@
     namespace: openshift-gitops
     name: openshift-gitops-argocd-application-controller
 
-- op: add
-  path: /subjects/-
-  value: 
-    kind: ServiceAccount
-    namespace: argocd-01
-    name: argocd-argocd-application-controller
+# - op: add
+  # path: /subjects/-
+  # value: 
+    # kind: ServiceAccount
+    # namespace: argocd-01
+    # name: argocd-argocd-application-controller
