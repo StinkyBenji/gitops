@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: root-app
   source:
-    path: argocd/apps/oc-practice
+    path: argocd/apps/vplugin-test
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
     
