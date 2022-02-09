@@ -226,7 +226,3 @@ data:
       send:
       - app-sync-succeeded
       when: app.status.operationState.phase in ['Succeeded']
-kind: ConfigMap
-metadata:
-  creationTimestamp: null
-  name: argocd-notifications-cm
