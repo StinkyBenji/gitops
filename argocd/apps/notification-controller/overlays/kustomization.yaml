@@ -4,11 +4,6 @@ kind: Kustomization
 bases:
   - ../base
 
-resources:
-  - notification-cm.yaml
-  - notification-secret.yaml
-
-  
 patchesJson6902:
   - target:
       kind: Secret
@@ -16,8 +11,9 @@ patchesJson6902:
       version: v1
     path: notification-secret.yaml
 
-  - target:
-      kind: ConfigMap
-      name: argocd-notifications-cm
-      version: v1
-    path: notification-cm.yaml
+
+configMapGenerator:
+  - name: argocd-notifications-cm
+    behavior: merge
+    files:
+      - notification-cm.yaml

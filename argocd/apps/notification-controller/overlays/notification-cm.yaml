@@ -1,7 +1,9 @@
-- op: add
-  path: /data/-
-  value:
-
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: argocd-notifications-cm
+data: 
   # service.email.gmail: |
     # username: $email-username
     # password: $email-password
