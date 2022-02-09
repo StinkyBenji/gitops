@@ -10,9 +10,20 @@ spec:
     server: https://kubernetes.default.svc
   project: root-app
   source:
-    path: argocd/apps/openshift-tools
+    path: argocd/apps/notification-controller
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
-    targetRevision: master
-
-  
-  
+    targetRevision: master  
+  plugin:
+  name: argocd-vault-plugin
+  env:
+    - name: AVP_K8S_ROLE
+      value: vplugin
+    - name: AVP_TYPE
+      value: vault
+    - name: AVP_AUTH_TYPE
+      value: k8s
+    
+    
+    
+    
+    

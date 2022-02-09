@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: argocd-instances
   namespace: openshift-gitops
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: "jarvis-test"
 spec:
   destination:
     namespace: argocd-01         
