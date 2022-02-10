@@ -28,8 +28,7 @@ spec:
         subPath: argocd-vault-plugin
     volumes:
       - emptyDir: {}
-        name: vault-plugin
-  dex:
+        name: vault-plugin  dex:
     openShiftOAuth: true
   rbac:    
     policy: g, argocdadmins, role:admin
