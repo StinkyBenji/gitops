@@ -6,11 +6,6 @@ bases:
 
 patchesJson6902:
   - target:
-      kind: Secret
-      name: argocd-notifications-secret
-      version: v1
-    path: notification-secret.yaml
-  - target:
       kind: ConfigMap
       name: argocd-notifications-cm
       version: v1

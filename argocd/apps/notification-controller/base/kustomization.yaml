@@ -3,7 +3,6 @@ kind: Kustomization
 
 resources:
   - notification-cm.yaml
-  - notification-secret.yaml
   - notification-service.yaml
   - notification-sa.yaml
   - role-rbac.yaml
