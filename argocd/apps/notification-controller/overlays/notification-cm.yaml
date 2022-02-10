@@ -79,12 +79,12 @@
       email:
         subject: Failed to sync application {{.app.metadata.name}}.
       message: |
-        {{if eq .serviceType "slack"}}:exclamation:{{end}}  The sync operation of application {{.app.metadata.    name}} has failed at {{.app.status.operationState.finishedAt}} with the following error: {{.app.    status.operationState.message}}
+        {{if eq .serviceType "slack"}}:exclamation:{{end}}  The sync operation of application {{.app.metadata.name}} has failed at {{.app.status.operationState.finishedAt}} with the following error: {{.app.status.operationState.message}}
         Sync operation details are available at: {{.context.argocdUrl}}/applications/{{.app.metadata.name}}?    operation=true .
       slack:
         attachments: |-
           [{
-            "title": "{{ .app.metadata.name}}",
+            "title": "{{.app.metadata.name}}",
             "title_link":"{{.context.argocdUrl}}/applications/{{.app.metadata.name}}",
             "color": "#E96D76",
             "fields": [
@@ -113,7 +113,7 @@
       email:
         subject: Start syncing application {{.app.metadata.name}}.
       message: |
-        The sync operation of application {{.app.metadata.name}} has started at {{.app.status.operationState.   startedAt}}.
+        The sync operation of application {{.app.metadata.name}} has started at {{.app.status.operationState.startedAt}}.
         Sync operation details are available at: {{.context.argocdUrl}}/applications/{{.app.metadata.name}}?    operation=true .
       slack:
         attachments: |-
