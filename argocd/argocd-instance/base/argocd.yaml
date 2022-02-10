@@ -20,13 +20,15 @@ spec:
           - mountPath: /vault-plugin
             name: vault-plugin
         workingDir: /vault-plugin
+    automountServiceAccountToken: true
+    serviceAccount: vplugin
     volumeMounts:
       - mountPath: /usr/local/bin/argocd-vault-plugin
         name: vault-plugin
         subPath: argocd-vault-plugin
     volumes:
       - emptyDir: {}
-        name: vault-plugin
+        name: vault-plugin  
   dex:
     openShiftOAuth: true
   rbac:    
