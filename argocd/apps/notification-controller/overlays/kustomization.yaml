@@ -10,10 +10,8 @@ patchesJson6902:
       name: argocd-notifications-secret
       version: v1
     path: notification-secret.yaml
-
-
-configMapGenerator:
-  - name: argocd-notifications-cm
-    behavior: merge
-    files:
-      - notification-cm.yaml
+  - target:
+      kind: ConfigMap
+      name: argocd-notifications-cm
+      version: v1
+    path: notification-cm.yaml
