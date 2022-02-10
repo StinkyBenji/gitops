@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: root-app
   source:
-    path: argocd/apps/vplugin-test
+    path: argocd/apps/notification-controller/overlays
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
     
