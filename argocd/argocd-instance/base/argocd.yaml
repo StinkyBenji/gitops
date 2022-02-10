@@ -20,8 +20,8 @@ spec:
           - mountPath: /vault-plugin
             name: vault-plugin
         workingDir: /vault-plugin
-    automountServiceAccountToken: true
-    serviceAccount: vplugin
+    mountsatoken: true
+    serviceaccount: vplugin
     volumeMounts:
       - mountPath: /usr/local/bin/argocd-vault-plugin
         name: vault-plugin
