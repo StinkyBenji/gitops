@@ -26,8 +26,6 @@ spec:
       - mountPath: /usr/local/bin/argocd-vault-plugin
         name: vault-plugin
         subPath: argocd-vault-plugin
-    serviceAccount: vplugin
-    automountServiceAccountToken: true
     volumes:
       - emptyDir: {}
         name: vault-plugin  
