@@ -4,4 +4,4 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: argocd-notifications-cm
-data: []
+data: {}
