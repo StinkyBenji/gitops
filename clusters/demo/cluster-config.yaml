@@ -5,6 +5,7 @@ metadata:
   namespace: openshift-gitops
   annotations:
     notifications.argoproj.io/subscribe.on-sync-succeeded.slack: "jarvis-test"
+    notifications.argoproj.io/subscribe.on-sync-failed.slack: "jarvis-test"
 spec:
   destination:
     namespace: openshift-gitops
