@@ -12,6 +12,6 @@ spec:
     server: https://kubernetes.default.svc
   project: cluster-config
   source:
-    path: cluster-config/overlays
+    path: cluster-config/
     repoURL: https://github.com/StinkyBenji/openshift-gitops-practice
     targetRevision: master
