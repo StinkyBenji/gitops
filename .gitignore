@@ -1,0 +1,4 @@
+argocd/apps/notification-controller/overlays/cm-service.yaml
+argocd/apps/notification-controller/overlays/cm-subscription.yaml
+argocd/apps/notification-controller/overlays/cm-template.yaml
+argocd/apps/notification-controller/overlays/cm-trigger.yaml
