@@ -1,0 +1,28 @@
+- op: add
+  path: /data
+  value:
+    subscriptions: |
+      # subscription for on-sync-status-unknown trigger notifications
+      - recipients:
+        - slack:jarvis-test
+        triggers:
+        - on-sync-status-unknown
+      
+  
+      # subscription for on-sync-status-unknown trigger notifications
+      - recipients:
+        - slack:jarvis-test
+        triggers:
+        - on-sync-failed
+
+      # subscription for on-health-degraded trigger notifications
+      - recipients:
+        - slack:jarvis-test
+        triggers:
+        - on-health-
+        - 
+      # subscription for on-deployed trigger notifications
+      - recipients:
+        - slack:jarvis-test
+        triggers:
+        - on-deployed
