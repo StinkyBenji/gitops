@@ -1,5 +1,8 @@
-- op: add
-  path: /data
-  value:
-    service.slack: |
-      token: $slack-token
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: argocd-notifications-cm
+data:
+  service.slack: |
+    token: $slack-token

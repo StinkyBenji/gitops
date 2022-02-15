@@ -3,10 +3,11 @@ kind: Kustomization
 
 bases:
   - ../base
-
-patches:
-  - target:
-      kind: ConfigMap
-      name: argocd-notifications-cm
-      version: v1
-    path: notification-cm.yaml
+resources:
+  - notification-cm.yaml
+  
+patchesStrategicMerge:
+  - service-cm.yaml
+  - subscription-cm.yaml
+  - template-cm.yaml
+  - trigger-cm.yaml
